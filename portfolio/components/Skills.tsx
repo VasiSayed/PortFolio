@@ -47,14 +47,14 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 bg-[var(--card-bg)] relative overflow-hidden">
+    <section id="skills" className="py-16 sm:py-24 px-4 sm:px-6 bg-[var(--card-bg)] relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 via-transparent to-[var(--accent)]/5 pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="animate-fade-in">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-[var(--foreground)]">
               Technical <span className="gradient-text">Skills</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--primary)] mx-auto mb-4"></div>
@@ -67,7 +67,7 @@ export default function Skills() {
             {skillCategories.map((category, index) => (
               <div
                 key={index}
-                className="card-hover hover-lift p-8 bg-[var(--card-bg)] rounded-2xl border border-[var(--card-border)] relative overflow-hidden group animate-scale-in"
+                className="card-hover hover-lift p-6 sm:p-8 bg-[var(--card-bg)] rounded-2xl border border-[var(--card-border)] relative overflow-hidden group animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Gradient accent */}
@@ -78,7 +78,7 @@ export default function Skills() {
                   <div className={`p-3 rounded-xl bg-gradient-to-br ${category.color} bg-opacity-20 border border-[var(--card-border)]`}>
                     <span className="text-2xl">{category.icon}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-2xl font-bold text-[var(--foreground)]">
                     {category.category}
                   </h3>
                 </div>
@@ -88,7 +88,7 @@ export default function Skills() {
                   {category.skills.map((skill, idx) => (
                     <div key={idx} className="group/skill">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-medium text-white group-hover/skill:text-[var(--primary)] transition-colors">
+                        <span className="text-sm font-medium text-[var(--foreground)] group-hover/skill:text-[var(--primary)] transition-colors">
                           {skill.name}
                         </span>
                         <span className="text-xs text-[var(--text-muted)] font-medium">

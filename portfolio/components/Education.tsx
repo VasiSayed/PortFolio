@@ -37,14 +37,14 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="py-24 px-6 relative overflow-hidden">
+    <section id="education" className="py-16 sm:py-24 px-4 sm:px-6 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent)]/5 via-transparent to-[var(--primary)]/5 pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-[var(--foreground)]">
               Education & <span className="gradient-text">Certificates</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--primary)] mx-auto mb-4"></div>
@@ -63,7 +63,7 @@ export default function Education() {
                     <span className="text-3xl">🎓</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-1">
+                    <h3 className="text-2xl font-bold text-[var(--foreground)] mb-1">
                       B.E. Computer Engineering
                     </h3>
                     <p className="text-[var(--accent)] font-medium">University of Mumbai</p>
@@ -80,7 +80,7 @@ export default function Education() {
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span className="text-sm font-medium text-white">CGPA: 7.09</span>
+                    <span className="text-sm font-medium text-[var(--foreground)]">CGPA: 7.09</span>
                   </div>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function Education() {
                     <span className="text-3xl">📜</span>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-1">
+                    <h3 className="text-2xl font-bold text-[var(--foreground)] mb-1">
                       Diploma in Computer Engineering
                     </h3>
                     <p className="text-[var(--accent)] font-medium">Government Polytechnic Mumbai</p>
@@ -111,7 +111,7 @@ export default function Education() {
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span className="text-sm font-medium text-white">CGPA: 7.57</span>
+                    <span className="text-sm font-medium text-[var(--foreground)]">CGPA: 7.57</span>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Education() {
         {/* Certificates Section */}
         <ScrollReveal delay={150}>
           <div>
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">
+            <h3 className="text-3xl font-bold text-[var(--foreground)] mb-8 text-center">
               Professional <span className="gradient-text">Certificates</span>
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -145,7 +145,7 @@ export default function Education() {
                     </div>
 
                     {/* Content */}
-                    <h4 className="text-lg font-bold text-white mb-2 group-hover:text-[var(--primary)] transition-colors">
+                    <h4 className="text-lg font-bold text-[var(--foreground)] mb-2 group-hover:text-[var(--primary)] transition-colors">
                       {cert.title}
                     </h4>
                     <p className="text-sm text-[var(--accent)] font-medium mb-1">

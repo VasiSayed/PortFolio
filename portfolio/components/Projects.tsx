@@ -113,7 +113,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto relative z-10">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 text-[var(--foreground)]">
               My <span className="gradient-text">Projects</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary)] via-[var(--accent)] to-[var(--primary)] mx-auto mb-4"></div>
@@ -122,7 +122,7 @@ export default function Projects() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {projects.map((project, index) => (
               <a
                 key={index}
@@ -141,7 +141,7 @@ export default function Projects() {
                     <div className="flex items-center gap-3">
                       <span className="text-3xl">{project.icon}</span>
                       <div>
-                        <h3 className="text-xl font-bold text-white group-hover:text-[var(--primary)] transition-colors">
+                        <h3 className="text-xl font-bold text-[var(--foreground)] group-hover:text-[var(--primary)] transition-colors">
                           {project.name}
                         </h3>
                         <p className="text-xs text-[var(--text-muted)] mt-0.5">{project.company}</p>
@@ -194,7 +194,7 @@ export default function Projects() {
                     {project.highlights.slice(0, 2).map((highlight, idx) => (
                       <div key={idx} className="flex items-start gap-2">
                         <span className="text-[var(--primary)] mt-1 flex-shrink-0">✓</span>
-                        <p className="text-sm text-[var(--text-muted)] line-clamp-2 group-hover:text-white/80 transition-colors">
+                        <p className="text-sm text-[var(--text-muted)] line-clamp-2 group-hover:text-[var(--foreground)]/90 transition-colors">
                           {highlight}
                         </p>
                       </div>

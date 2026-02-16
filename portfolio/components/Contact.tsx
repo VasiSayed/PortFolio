@@ -55,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-[var(--card-bg)] relative overflow-hidden">
+    <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6 bg-[var(--card-bg)] relative overflow-hidden">
       {/* Background decoration */}
       <div className="pointer-events-none absolute -right-40 bottom-24 h-64 w-64 rounded-full bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.25),transparent)] blur-3xl" />
       
@@ -71,7 +71,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {/* Contact Info Cards */}
             <div className="space-y-6">
               <a
@@ -79,7 +79,7 @@ export default function Contact() {
                 className="card-hover hover-lift p-6 bg-[var(--card-bg)] rounded-xl border border-[var(--card-border)] group block"
               >
                 <div className="text-3xl mb-3">📧</div>
-                <h3 className="font-semibold text-white mb-2 group-hover:text-[var(--primary)] transition-colors">
+                <h3 className="font-semibold text-[var(--foreground)] mb-2 group-hover:text-[var(--primary)] transition-colors">
                   Email
                 </h3>
                 <p className="text-sm text-[var(--text-muted)] break-all">
@@ -102,7 +102,7 @@ export default function Contact() {
 
               <div className="card-hover hover-lift p-6 bg-[var(--card-bg)] rounded-xl border border-[var(--card-border)]">
                 <div className="text-3xl mb-3">📍</div>
-                <h3 className="font-semibold text-white mb-2">Location</h3>
+                <h3 className="font-semibold text-[var(--foreground)] mb-2">Location</h3>
                 <p className="text-sm text-[var(--text-muted)]">
                   Mahim, Mumbai
                 </p>
@@ -111,14 +111,14 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="card-hover hover-lift p-8 bg-[var(--card-bg)] rounded-xl border border-[var(--card-border)]">
-              <h3 className="text-2xl font-bold text-white mb-6">
+              <h3 className="text-2xl font-bold text-[var(--foreground)] mb-6">
                 Send a Message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-white mb-2"
+                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
                   >
                     Name
                   </label>
@@ -137,7 +137,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-white mb-2"
+                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
                   >
                     Email
                   </label>
@@ -156,7 +156,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-white mb-2"
+                    className="block text-sm font-medium text-[var(--foreground)] mb-2"
                   >
                     Message
                   </label>
@@ -167,7 +167,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 bg-[var(--background)] border border-[var(--card-border)] rounded-lg text-white placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--primary)] transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-[var(--background)] border border-[var(--card-border)] rounded-lg text-[var(--foreground)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--primary)] transition-colors resize-none"
                     placeholder="Your message..."
                   />
                 </div>
